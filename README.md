@@ -2,7 +2,7 @@
 面向安全、数据、算法人员梳理的安全智能化落地指南
 
 ## 版本
-  - 当前更新版本：2021-08-10 版本地址：[commit](https://github.com/404notf0und/AI-for-Security-Landing-Guide)
+  - 当前更新版本：2021-08-21 版本地址：[commit](https://github.com/404notf0und/AI-for-Security-Landing-Guide)
   - 如果您发现任何更新、问题或改进，请随时 fork 和 PR
   - Please feel free to fork and PR if you find any updates, issues or improvement.
 
@@ -18,10 +18,10 @@
   - [特征工程选型](#特征工程选型)
   - [机器学习算法选型](#机器学习算法选型)
   - [机器学习算法调参](#机器学习算法调参)
+  - [训练过程和预测过程保持强一致性](#训练过程和预测过程保持强一致性)
 
 ## 介绍
-该指南最初由 [404notfound@柳星] 编写，分享机器学习落地安全的经验，趟过的路，哪条路是通畅的，哪条路是需要避免的，目的是使一些同路人能快速Landing，同时也欢迎同路人加入一起编写。
-[404notfound@柳星]: https://github.com/404notf0und
+该指南最初由 [404notfound@柳星](https://github.com/404notf0und "404notfound@柳星") 编写，分享机器学习落地安全的经验，趟过的路，哪条路是通畅的，哪条路是需要避免的，目的是使一些同路人能快速Landing，同时也欢迎同路人加入一起编写。
 
 ## 指导原则
 ### 检查数据标签纯净度
@@ -56,3 +56,7 @@ garbage in, garbage out。
 - dbscan有2个核心参数，建议联合调参。
 	1. 𝜖-邻域的距离阈值eps
 	2. 𝜖-邻域的样本数阈值min_samples
+	
+### 训练过程和预测过程保持强一致性
+训练过程中使用的特征提取方法，产出的产物如：模型、词嵌入向量词典，在预测过程中要对应使用训练过程中的成套方法和产物。
+bad case：在预测过程中，使用了一次训练模型任务中的词嵌入向量词典，使用了另一次训练模型任务中的模型，导致预测发生意外，不符合预期。
