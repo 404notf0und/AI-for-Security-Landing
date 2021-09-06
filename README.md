@@ -2,7 +2,7 @@
 面向安全、数据、算法人员梳理的安全智能化落地指南
 
 ## 版本
-  - 当前更新版本：2021-08-21 版本地址：[commit](https://github.com/404notf0und/AI-for-Security-Landing-Guide)
+  - 当前更新版本：2021-09-06 版本地址：[commit](https://github.com/404notf0und/AI-for-Security-Landing-Guide)
   - 如果您发现任何更新、问题或改进，请随时 fork 和 PR
   - Please feel free to fork and PR if you find any updates, issues or improvement.
 
@@ -11,6 +11,7 @@
 - [目录](#目录)
 - [介绍](#介绍)
 - [指导原则](#指导原则)
+  - [定义好问题](#定义好问题)
   - [检查数据标签纯净度](#检查数据标签纯净度)
   - [黑样本分布多样性](#黑样本分布多样性)
   - [避免黑样本浓度过低](#避免黑样本浓度过低)
@@ -24,6 +25,9 @@
 该指南最初由 [404notfound@柳星](https://github.com/404notf0und "404notfound@柳星") 编写，分享机器学习落地安全的经验，趟过的路，哪条路是通畅的，哪条路是需要避免的，目的是使一些同路人能快速Landing，同时也欢迎同路人加入一起编写。
 
 ## 指导原则
+### 定义好问题
+落地优先级：安全>数据>特征>算法，定义问题，即确定待解决的安全问题，是第一要务。「好问题」最好同时需要满足「必要性」、「充分性」、「新颖性」，必要性是指安全团队内部价值需要，充分性是指样本及标签等可被低成本构建，新颖性是指不再是复制现有问题，例如URL异常检测、XSS检测等。
+
 ### 检查数据标签纯净度
 garbage in, garbage out。
 
