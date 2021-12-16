@@ -1,4 +1,4 @@
-# AI-for-Security-Landing-Guide
+# AI-for-Security-Landing
 企业级、可落地、可复用的安全智能化实践
 
 ## 版本
