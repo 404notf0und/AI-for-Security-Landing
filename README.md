@@ -2,15 +2,16 @@
 企业级、可落地、可复用的安全智能化实践
 
 ## 版本
-  - 当前更新版本：2021-09-06 版本地址：[commit](https://github.com/404notf0und/AI-for-Security-Landing-Guide)
+  - 当前更新版本：2022-02-19 版本地址：[commit](https://github.com/404notf0und/AI-for-Security-Landing-Guide)
   - 如果您发现任何更新、问题或改进，请随时 fork 和 PR
   - Please feel free to fork and PR if you find any updates, issues or improvement.
 
 ## 企业级实践
-- [攻击同源挖掘]
-- [恶意机器流量识别]
-- [CVE漏洞结构化预测]
-- [CVE漏洞exp预测]
+- [攻击同源聚类]
+- [恶意机器流量分类]
+- [CVE漏洞命名实体识别]
+- [CVE漏洞利用可能性预测]
+- [攻击者知识图谱]
 
 ## 踩坑经验
 ### 目录
