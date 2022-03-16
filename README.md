@@ -11,7 +11,7 @@
 - [恶意机器流量分类]
 - [CVE漏洞命名实体识别]
 - [CVE漏洞利用可能性预测]
-- [攻击者知识图谱]
+- [攻击者知识图谱](https://mp.weixin.qq.com/s/tDJJOfwac5NAick15lS7-A)
 
 ## 踩坑经验
 ### 目录
